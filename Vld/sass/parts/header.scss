@@ -1,0 +1,52 @@
+.header {
+    font-size: 26px;
+    height: 100%;
+}
+.headmenu {
+    text-align: center;
+}
+.headmenu__item {
+    display: inline-block;
+}
+.headmenu__link {
+    display: block;
+    @include radius(5px);
+    text-decoration: none;
+    padding: 10px;
+    color: $main-font-color;
+    font-size: 18px;
+    &:focus,
+    &:hover {
+        background: #A6B5AB;
+        color: $color-hover-menu;
+    }
+    @include tablet {
+        padding: 20px;
+        font-size: 24px;
+    };
+}
+.headmenu__link-clear:focus, .headmenu__link-clear:hover {
+      background: #B0171F;
+}
+.header__desc {
+    padding: 50px 0 0;
+    font-size: 20px;
+    @include tablet {
+        font-size: 30px;
+    };
+}
+.header__name {
+    text-align: center;
+}
+.header__contletter {
+    text-align: center;
+    padding: 130px 0;
+}
+.header__letter {
+    font-size: 100px;
+    font-family: $font-logo;
+    @include tablet {
+        font-size: 200px;
+        letter-spacing: 15px;
+    };
+}

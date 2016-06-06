@@ -1,0 +1,36 @@
+.scroll-helper {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    width: 280px;
+    margin-left: -140px;
+    margin-top: 35px;
+    text-align: center;
+    font-size: 14px;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    text-decoration: none !important;
+    color: #ffffff !important;
+    z-index: 10;
+}
+.scroll-helper__icon {
+    background-color: rgba(0,0,0,0.5);
+    display: block;
+    width: 51px;
+    height: 51px;
+    border-radius: 51px;
+    position: relative;
+    margin: 0 auto -10px;
+    transform-origin: center center;
+    -webkit-animation: arrow-animate 0.5s ease-in-out infinite;
+    -moz-animation: arrow-animate 0.5s ease-in-out infinite;
+    -ms-animation: arrow-animate 0.5s ease-in-out infinite;
+    -o-animation: arrow-animate 0.5s ease-in-out infinite;
+    animation: arrow-animate 0.5s ease-in-out infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
