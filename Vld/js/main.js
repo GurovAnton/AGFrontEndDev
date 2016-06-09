@@ -1,8 +1,8 @@
 require(
     [
         'app',
-        'list',
         'edit',
+        'list',
         'delete'
     ],
     function() {

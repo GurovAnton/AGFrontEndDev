@@ -51,13 +51,13 @@
         </header>
         <div class="container">
 
-          <script type="text/template" id="option">
-            <select class="" name="">
+          <!-- <script type="text/template" id="option">
+            <select class="selection" name="">
               <% for (var i = 0; i < list.length; i++) { %>
-                <option value="option"><%= list[i]%></option>
-              <% }; %>  
+                <option value="<%= list[i]%>"><%= list[i]%></option>
+              <% }; %>
             </select>
-          </script>
+          </script> -->
 
 
             <script type="text/template" id="list-container">
@@ -84,6 +84,10 @@
                     <div class="container">
                         <div class="main_info">
                             <p class="info_head">Main information</p>
+                            <!-- <div class="info-group">
+                                <label for="name">Company</label>
+                                <input class="main_input" id="comp" type="text" value="<% if (list) { %><%= list.comp %> <%} else {%><%= " " %><%}%>"/>
+                            </div> -->
                             <div class="info-group">
                                 <label for="name">Name</label>
                                 <input class="main_input" id="name" type="text" value="<% if (list) { %><%= list.name %> <%} else {%><%= " " %><%}%>"/>

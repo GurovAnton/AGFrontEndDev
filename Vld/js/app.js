@@ -7,6 +7,7 @@ define(
             info = [],
             adress = [];
         self.getDb = function() {
+
           if (db !== null) {
             db = JSON.parse(localStorage.getItem('dat'));
           } else {
